@@ -37,3 +37,33 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'devise'
+gem 'figaro'
+gem 'sendgrid'
+gem 'slim'
+
+group :assets do
+  gem 'less-rails'
+  gem 'therubyracer', :platform=>:ruby
+  gem 'twitter-bootstrap-rails'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
+  gem 'haml-rails'
+  gem 'haml2slim'
+  gem 'html2haml'
+  gem 'hub', :require=>nil
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'email_spec'
+end
+
